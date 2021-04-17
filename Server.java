@@ -30,7 +30,9 @@ class Server{
                     String msg = br.readLine();
                     if(msg.equals("exit")){
                         System.out.println("Client Has stopped the chat");
+                        break;
                     }
+                    System.out.println("Client:"+msg );
                 }
                 catch(Exception e){
                     e.printStackTrace();

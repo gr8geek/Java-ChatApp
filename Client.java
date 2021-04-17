@@ -28,7 +28,9 @@ class Client{
                     String msg = br.readLine();
                     if(msg.equals("exit")){
                         System.out.println("Client Has stopped the chat");
+                        break;
                     }
+                    System.out.println("Client:"+msg );
                 }
                 catch(Exception e){
                     e.printStackTrace();
@@ -59,5 +61,6 @@ class Client{
 
     public static void main(String args[]){
         System.out.println("Hello");
+        new Client();
     }
 }
